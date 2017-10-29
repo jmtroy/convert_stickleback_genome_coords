@@ -53,8 +53,8 @@ import pandas as pd
 # setup argparse (set up command line arguments and help)
 
 parser = argparse.ArgumentParser(description='''convert_gasAcu1S1_to_gasAcu1.py is a linux/MAC OS command
-line program to convert files with stickleback gasAcu1 gemome coordinates to
-gasAcu1S1 genome coordinates. for example: convert chromosome name from groupI to chrI, groupII to chrII, etc..
+line program to convert files with stickleback gasAcu1S1 gemome coordinates to
+gasAcu1 genome coordinates. for example: convert chromosome name from groupI to chrI, groupII to chrII, etc..
 And also convert scaffolds to chrUn. for example: scaffold_37 1000  2000   to chrUn 5107261 5108261.
 
 To know how to convert scaffolds to chrUn, the program requires a file called ChrUn_to_scaffolds.txt

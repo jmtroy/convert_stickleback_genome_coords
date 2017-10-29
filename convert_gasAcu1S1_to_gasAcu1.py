@@ -98,7 +98,7 @@ with open(args.input_file) as file_handle:
 			if chrom_name[0:5] == 'group' :
 				chrom_name = 'chr' + chrom_name[5:999]
 				file_line_array[args.chrom_col - 1] = chrom_name
-			else :
+			if chrom_name[0:8] == 'scaffold' :
 				# if the chrom name did not begin with group, we will use the conversion dataframe
 				# new_chrom_name = (convert_df.loc[convert_df['Scaffold']==chrom_name]['Chr'].values)[0] ## use column names passed as args below
 				new_chrom_name = (convert_df.loc[convert_df[args.cf_frm_name_col]==chrom_name][args.cf_to_name_col].values)[0]
